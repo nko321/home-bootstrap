@@ -38,3 +38,4 @@ function grep ($pattern){
         return (Get-ChildItem -Recurse *.* | Select-String -Pattern $pattern | Select-Object -Unique Path)
 }
 Clear-Host
+Start-Transcript -Append -Path "~\$(Get-Date -format "yyyy-MM-dd_HH:mm:ss").pstranscript.txt"
