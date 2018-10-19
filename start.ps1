@@ -1,3 +1,4 @@
+New-Item -Path $profile -Force
 Copy-Item -Path Microsoft.PowerShell_profile.ps1 -Destination $profile
 Set-ExecutionPolicy Unrestricted -Force
 dism /online /Enable-Feature /FeatureName:TelnetClient
