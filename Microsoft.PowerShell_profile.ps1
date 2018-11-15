@@ -40,6 +40,13 @@ function grep ($pattern){
 Clear-Host
 Start-Transcript -Append -Path "~\$(Get-Date -format "yyyy-MM-dd_HH:mm:ss").pstranscript.txt"
 
+Function Play-Sound
+{
+    $sound = new-Object System.Media.SoundPlayer;
+    $sound.SoundLocation="c:\WINDOWS\Media\notify.wav";
+    $sound.Play();
+}
+
 Function Touch-File
 {
     $file = $args[0]
