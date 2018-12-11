@@ -63,4 +63,5 @@ Function Touch-File
 }
 
 Clear-Host
+$GitPromptSettings.DefaultPromptPrefix = '$(Get-Date -f "MM-dd HH:mm'
 Start-Transcript

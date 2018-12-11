@@ -1,0 +1,3 @@
+mkdir \c; cd \c; Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -U
+seBasicParsing -Uri https://github.com/nko321/home-bootstrap/archive/master.zip -OutFile master.zip; Expand-Archive -Path master.zip -DestinationPath .\tmp-home-bootstrap;cd .\tmp-home-bootstrap\home-bootstrap-master; & .\star
+t.ps1
