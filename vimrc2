@@ -1,0 +1,19 @@
+set relativenumber " Use relative numbers to start
+set autoindent " Start every newline with the same number of tabs or spaces as the previous one
+set linebreak " Word wrap done pretty, like you'd expect the default to be
+autocmd InsertEnter * :set number " When in Insert mode, use normal numbering
+autocmd InsertLeave * :set relativenumber " When in Normal mode, use relative numbering
+set tabstop=4 " Default tabs look wiiiiiiiide
+colorscheme evening " The only default colorscheme I care to stare at
+"call plug#begin('~/.vim/plugged')
+"Plug 'jceb/vim-orgmode'
+"call plug#end()
+autocmd CursorHold ?* write " Saves the buffer when cursor is idle
+" That last one should probably change someday. It should save to a temp file and leave the real deal untouched.
+set breakindent " Makes it so word wrap is pretty on indented lines
+syntax enable " Enable syntax highlighting
+set cursorline " Underlines the cursor's line
+set wildmenu " Visual meny for autocomplete
+set lazyredraw " Faster redraw
+set showmatch " Highlights encapsulation matches {} [] ()
+set hlsearch " Highlights search hits.
